@@ -21,7 +21,7 @@ body {
 .main-container {
     width: 100%;
     max-width: 1440px;
-    padding: 0 50px;
+    padding:  0px 50px 0px 50px;
     box-sizing: border-box;
 }
 
@@ -58,25 +58,46 @@ a {
     color: var(--main-bg-color)
 }
 
+.h1 {
+    font-weight: 700;
+    font-size: 22px;
+}
+
 /*header*/
 .header {
-    width: 1440px;
     height: 79px;
     display: flex;
-    flex-direction: row;
+    align-items:flex-start;
+    justify-content: space-between;
+}
+.logoReservia {
+    width: 161.09px;
+    height: 79px;
+    display: flex;
+    align-items: center;
 }
 .logo {
     width: 61.09px;
     height: 19px;
 }
-.logoReservia {
-    width: 161.09px;
-    height: 79px;
-    padding: 30px, 50px, 30px, 50px;
-    gap: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.menu {
+  width: 284px;
+  height: 35px;
+}
+
+.nav {
+   list-style-type: none;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+
+a:hover {
+    color: #0065FC;
+    border-top: 2px #0065FC solid;
+    padding-top: 18px;
 }
 
 /****** Hebergements And Populaires ***********/
